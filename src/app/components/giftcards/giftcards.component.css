@@ -1,0 +1,72 @@
+body {
+  background-image: none;
+}
+.card-img {
+  width: 230px;
+  height: 140px;
+}
+
+.center-block {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #ad101c;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.card-img:hover {
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15);
+}
+.card-img {
+  transition: opacity 0.3s ease-in;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.4s;
+}
+.card-name {
+  float: left;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-family: "sofiapro-light";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card-name {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+  font-size: 25px;
+}
+
+.card-img {
+}
+.card-items {
+}
+
+.col-lg-2 {
+}
+
+.center-wrapper {
+  height: 70%;
+  width: 100%;
+
+  margin-left: 50px;
+}
+
+.below-navbar {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-image: url("/src/assets/background-pine-texture-82256.jpg");
+}

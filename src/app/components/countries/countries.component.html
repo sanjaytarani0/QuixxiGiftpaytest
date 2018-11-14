@@ -1,0 +1,58 @@
+<body>
+  <div class="jumbotron vertical-center">
+    <div class="container">
+      <img
+        src="../../../assets/quixxilogo.png"
+        height="80px"
+        width="150px"
+        alt=""
+      />
+      <h3>Welcome to Quixxi Connect</h3>
+    </div>
+    <div class="button">
+      <div class="btn-group-horizontal">
+        <button
+          type="button"
+          routerLink="/giftcards"
+          class="btn btn-success btn-lg"
+        >
+          Australia
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" disabled>
+          United States
+        </button>
+        <button type="button" class="btn btn-secondary btn-lg" disabled>
+          United Kingdom
+        </button>
+      </div>
+    </div>
+    <div style="margin-top:500px;"></div>
+
+    <div *ngIf="toggleProviders" class="providerImages">
+      <img
+        src="../../../assets/20170711-Coles-gift-card.jpg"
+        class="img-fluid"
+        alt="Responsive Image"
+        height="60px"
+        width="60px"
+      />
+      <h2>Coles</h2>
+      <img
+        src="../../../assets/woolworthsgc.png"
+        class="img-fluid"
+        alt="Responsive Image"
+        height="60px"
+        width="60px"
+      />
+      <h2>Woolworths</h2>
+      <img
+        src="../../../assets/djgc.png"
+        class="img-fluid"
+        alt="Responsive Image"
+        height="60px"
+        width="60px"
+      />
+      <h2>David Jones</h2>
+    </div>
+  </div>
+</body>

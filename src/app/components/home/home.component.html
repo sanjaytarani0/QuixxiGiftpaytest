@@ -1,0 +1,102 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <h1>Please Enter the details to Process your GiftCard</h1>
+
+  <div class="card">
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+      <div class="card-header"><b>GiftPay </b></div>
+      <div class="card-body">
+        Name:
+        <input
+          type="text"
+          name="username"
+          [(ngModel)]="user.name"
+          class="form-control"
+          required
+        />
+        Email:
+        <input
+          type="email"
+          name="email"
+          [(ngModel)]="user.email"
+          class="form-control"
+          required
+        />
+        <label for="inputAmount">Amount:</label>
+        <select
+          id="inputAmount"
+          class="form-control"
+          name="amount"
+          [(ngModel)]="user.amount"
+          required
+        >
+          <option selected>Choose...</option>
+          <option>$20</option>
+          <option>$50</option>
+          <option>$100</option>
+          <option>$200</option>
+        </select>
+        Message:
+        <input
+          type="text"
+          name="message"
+          [(ngModel)]="user.message"
+          class="form-control"
+        />
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
+          Purchase
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Confirmation
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Price of Ether : Price of AUD: Are you sure ?? Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Repudiandae ea rem
+                voluptatum ipsa dolore iure ipsum facere id magnam voluptatibus!
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn btn-primary" submit="">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
